@@ -1,0 +1,520 @@
+.pack-slick-container {
+	margin-top: 70px;
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+.pack-slick-container .swiper {
+	padding: 0 5%;
+}
+
+.pack-slick-container .swiper .swiper-slide {
+	transition: all 0.3s;
+	margin: auto;
+}
+
+.pack-slick-container .card-package-group {
+	width: 100%;
+}
+
+.pack-slick-container .packages-slick {
+	position: relative;
+	height: 100%;
+	display: block;
+}
+
+.pack-slick-container .packages-slick .item {
+	display: flex;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-next {
+	margin-left: 205px;
+}
+
+.pack-slick-container .packages-slick.expanded .pack-img {
+	transform: translate(-110px, 0) scale(1);
+	transition: all 0.5s 0.25s;
+}
+
+.pack-slick-container .packages-slick.expanded .card-package {
+	transform: translate(-110px, 0);
+}
+
+.pack-slick-container .packages-slick.expanded .card-package .more-info {
+	display: none;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package {
+	height: 320px;
+	width: 600px;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .more-info {
+	pointer-events: all;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .close-expanded {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border: 2px solid #191a1a;
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	color: #fff;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package {
+	height: auto;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .bw-group {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
+	animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .bw-group .brandw-name {
+	width: 33.3333333%;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .bw-group .brandw-net {
+	width: 33.3333333%;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .bw-group .brandw-price {
+	margin-top: 0;
+	width: 33.3333333%;
+	text-align: end;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .info-group .moreinfo {
+	display: block;
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
+	animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
+}
+
+.pack-slick-container .packages-slick.expanded .swiper-slide-active .card-package .register-location-btn {
+	display: block;
+}
+
+.mypack-group {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-top: 8em;
+}
+
+.mypack-group .pack-img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 1;
+}
+
+.card-package-group {
+	position: relative;
+	display: block;
+	margin: auto;
+}
+
+.card-package-group:hover .pack-img {
+	transform: scale(1.2);
+}
+
+.card-package-group .pack-img {
+	opacity: 0;
+	transform: scale(1);
+	position: relative;
+	z-index: 1;
+	transition: all 0.4s;
+}
+
+.card-package-group .pack-img img {
+	position: absolute;
+	bottom: -3em;
+	left: 50%;
+	width: 200px;
+	transform: translate(-50%, 0);
+}
+
+.swiper-slide-active .pack-img {
+	opacity: 1;
+}
+
+.swiper-slide-active .card-package {
+	transition-delay: 0s;
+}
+
+.swiper-slide-active .card-package .card-body {
+	margin: 20px 0;
+}
+
+.card-package {
+	border-radius: 20px;
+	padding: 45px 10px 20px 10px;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	transform: translate(0, 0);
+	transition: 0.5s all 0.5s;
+}
+
+.card-package .close-expanded {
+	display: none;
+	cursor: pointer;
+}
+
+.card-package .card-text {
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.card-package .hot {
+	position: absolute;
+	top: 10px;
+}
+
+.card-package .hot p {
+	font-size: 25px;
+	font-weight: bold;
+	bottom: 10px;
+	left: -5px;
+}
+
+.card-package .hot::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background: #eb6436;
+	background: linear-gradient(140deg, rgba(235, 100, 54, 1) 0%, rgba(254, 189, 51, 1) 100%);
+	width: 5em;
+	height: 5em;
+	border-radius: 100%;
+	transform: rotate(16deg) skew(-20deg, 8deg) translate(-60px, -25px) scale3d(1.3, 1.3, 1);
+}
+
+.card-package button {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 1;
+	max-width: 323px;
+	background-color: transparent;
+}
+
+.card-package button:hover,
+.card-package button:focus {
+	box-shadow: inset 20em 0 0 0 #000;
+	color: #fff;
+}
+
+.card-package .register-location-btn {
+	display: none;
+	background-color: #000;
+	color: #fff;
+}
+
+.card-package .register-location-btn:hover,
+.card-package .register-location-btn:focus {
+	box-shadow: inset 16em 0 0 0 #2c2c2c;
+}
+
+.card-package.maximize {
+	width: 600px;
+	height: auto;
+	height: auto;
+}
+
+.card-package.maximize .info-group .moreinfo .custom-list {
+	list-style: disc;
+	color: #191a1a;
+	font-size: 20px;
+}
+
+.card-package.maximize .close-expanded {
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	color: #fff;
+}
+
+.card-package.maximize .bw-group {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
+	animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
+}
+
+.card-package.maximize .bw-group .brandw-name {
+	width: 33.3333333%;
+}
+
+.card-package.maximize .bw-group .brandw-net {
+	width: 33.3333333%;
+}
+
+.card-package.maximize .bw-group .brandw-price {
+	margin-top: 0;
+	width: 33.3333333%;
+	text-align: end;
+}
+
+.card-package.maximize .info-group .moreinfo {
+	display: block;
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
+	animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.5s;
+}
+
+.card-package.maximize .register-location-btn {
+	display: block;
+}
+
+.select-pack-title {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.packages-slick .info-group .moreinfo {
+	display: none;
+}
+
+.packages-slick .info-group .moreinfo .custom-list {
+	list-style: disc;
+	color: #191a1a;
+	font-size: 20px;
+}
+
+.bw-group .brandw-name {
+	width: 48%;
+}
+
+.bw-group .brandw-net {
+	width: 50%;
+}
+
+.bw-group .brandw-price {
+	margin-top: 1rem;
+	width: 100%;
+}
+
+.bw-group .brandw-price .price {
+	font-size: 62px;
+}
+
+.bw-group .max-bw {
+	font-size: 62px;
+}
+
+.bw-group .bw-mbs {
+	padding: 4px 0;
+}
+
+.bw-group .bw-mbs .mbps-num {
+	position: relative;
+	top: 15px;
+}
+
+.bw-group .bw-mbs .mbps {
+	position: relative;
+	bottom: -10px;
+}
+
+.bw-group .bw-detail {
+	padding: 4px 0;
+}
+
+.modal-close-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 15px;
+}
+
+.margin-custom-modal {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.custom-scrollbar {
+	/* Track */
+	/* Handle */
+	/* Handle on hover */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+	width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: #d5d5d5;
+	border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: #d5d5d5;
+	border-radius: 10px;
+}
+
+.check-location-btn {
+	background-color: #ffd100;
+	color: #343535;
+	font-weight: bold;
+	font-size: 20px;
+	width: 50%;
+}
+
+.check-location-btn:hover {
+	background-color: #ffd100;
+}
+
+.packages-body {
+	position: relative;
+	display: block;
+	margin-bottom: 15em;
+	padding-top: 6em;
+	overflow: hidden;
+}
+
+.addon-container {
+	position: relative;
+	padding: 0 10%;
+	overflow: hidden;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list {
+	overflow: visible;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card {
+	margin: 0 10% 0 0;
+	border-radius: 20px;
+	border-color: #ffe778;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .addon-card-body {
+	height: 90px;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .addon-img {
+	margin: auto;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .addon-img img {
+	width: 50px;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .addon-txt {
+	margin-left: 10px;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .btn-select-addon {
+	border-color: #ffd100;
+	color: #191a1a;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .btn-select-addon:hover {
+	background-color: #fdd000;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .btn-select-addon:focus {
+	box-shadow: none;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .btn-select-addon .fa-check {
+	display: none;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .btn-select-addon.active {
+	background-color: #ffd100;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .btn-select-addon.active .fa-plus {
+	display: none;
+}
+
+.addon-container .addon-slide-container .addon-slide .slick-list .item .card .btn-select-addon.active .fa-check {
+	display: inline-block;
+}
+
+.addon-footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 0px;
+	background-color: #ffd100;
+	transition: all 0.5s;
+	max-height: 90px;
+}
+
+.addon-footer.exp {
+	max-height: 50vh;
+}
+
+.addon-footer.exp .register-btn-2 {
+	display: block;
+}
+
+.addon-footer .expand-addon-icon {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.addon-footer .expand-addon-icon .fa-chevron-up {
+	transform: rotate(180deg);
+}
+
+.addon-footer .expand-addon-icon.up .fa-chevron-up {
+	transform: rotate(0);
+	transition: all 0.5s;
+}
+
+.addon-footer.minimize {
+	bottom: -65px;
+}
+
+.register-btn-fix {
+	position: fixed;
+	bottom: 20px;
+	width: 25%;
+}
+
+.register-btn-fix button {
+	font-size: 24px;
+	background-color: transparent;
+	border: 2px solid #000;
+	color: #000;
+	line-height: 1;
+}
+
+.exp .register-btn-fix button {
+	background-color: #000;
+	color: #fff;
+}

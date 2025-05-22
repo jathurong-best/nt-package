@@ -1,0 +1,184 @@
+body {
+    font-family: "NT";
+    font-weight: normal;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.bg-tot::before {
+    z-index: -99999;
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffd829;
+}
+
+.bar-custom {
+    width: 60px;
+}
+
+.bar-custom hr {
+    opacity: 1;
+    height: 4px;
+    transition: all 0.2s linear;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.bar-custom hr:last-child {
+    width: 60%;
+    margin-bottom: 0px;
+}
+
+.search-btn img {
+    width: 35px;
+}
+
+.home {
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.home-banner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.home-banner-container .home-banner {
+    margin-top: 70px;
+    margin-bottom: auto;
+    margin-left: 5%;
+    width: 75%;
+}
+
+.home-banner-container .home-banner .home-banner-txt {
+    font-size: 80px;
+    color: black;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.home-banner-container .home-banner .home-banner-txt span {
+    font-size: 84px;
+    color: #e0513d;
+    position: relative;
+    top: 5px;
+}
+
+.home-banner-container .home-banner .home-banner-sub {
+    font-size: 25px;
+    color: #000;
+    line-height: 1;
+}
+
+.home-banner-container .home-img img {
+    width: 100%;
+}
+
+.hover-slide {
+    background-color: #000;
+}
+
+.hover-slide:hover,
+.hover-slide:focus {
+    border-color: #2c2c2c;
+    color: #fff;
+}
+
+.hover-slide:hover,
+.hover-slide:focus {
+    box-shadow: inset 12em 0 0 0 #2c2c2c;
+}
+
+.start-btn {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+}
+
+.start-btn a:hover .rocket {
+    -moz-animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+}
+
+.start-btn .rocket {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 12px;
+}
+
+.start-btn .rocket img {
+    width: 22px;
+    margin: 0 auto auto 0;
+}
+
+.start-btn .circle img {
+    width: 100px;
+}
+
+.start-btn .txt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.start-btn .txt p {
+    color: white;
+    margin: 0;
+    line-height: 1;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+@-moz-keyframes rotate {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

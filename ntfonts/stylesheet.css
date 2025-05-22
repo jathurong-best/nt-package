@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'NT';
+    src: url('NTRegular.woff2') format('woff2'),
+        url('NTRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NT';
+    src: url('NTBold.woff2') format('woff2'),
+        url('NTBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NT';
+    src: url('NTRegular.woff2') format('woff2'),
+        url('NTRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NT';
+    src: url('NTBold.woff2') format('woff2'),
+        url('NTBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

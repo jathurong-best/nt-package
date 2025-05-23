@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>packages</title>
-    <link rel="stylesheet" href="./home.css">
-    <link rel="stylesheet" href="package.css">
+    <!-- <link rel="stylesheet" href="./home.css"> -->
+    <!-- <link rel="stylesheet" href="package.css"> -->
     <link rel="stylesheet" href="./packages-slide.css">
-    <link rel="stylesheet" href="./../vendor/bootstrap.min.css" />
-    <link rel="stylesheet" href="./../vendor/swiper-bundle.css">
+    <!-- <link rel="stylesheet" href="./../vendor/bootstrap.min.css" /> -->
+    <!-- <link rel="stylesheet" href="./../vendor/swiper-bundle.css"> -->
 
 </head>
 
@@ -23,7 +23,11 @@
                     <div class="swiper" id="package-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="package-card">
+                                <div class="package-card card-package">
+                                    <button type="button" id="open-modalIndex1" class="close-icon close-expanded">
+                                            <img src="./../assets/images/close-icon.svg" alt="package"
+                                                class="package-card-close">
+                                        </button>
                                     <div class="package-card-header">
                                         <img class="header-icon" src="./../assets/images/header-icon.png" alt="package"
                                             class="package-card-img">
@@ -39,8 +43,14 @@
 
                                     </div>
                                     <div class="package-card-body">
+                                        <div class="condition-link-wrapper">
+                                            <button type="button" class="condition-link more-info"
+                                                data-bs-toggle="modal" data-bs-target="#packages-modal">
+                                                เงื่อนไขเพิ่มเติม
+                                            </button>
+                                        </div>
                                         <div class="package-price-wrapper">
-                                            <p class="package-card-price">1,000</p>
+                                            <p class="package-card-price">490</p>
                                             <p class="package-card-description">บาท / เดือน</p>
                                         </div>
                                         <div class="collapse" id="packageConditionIndex1">
@@ -65,31 +75,41 @@
                                                         fill="#fff" />
                                                 </svg>
                                             </button>
-                                            <button id="registerBtnIndex1" type="button"
-                                                class="package-button register-button">สมัครแพ็กเกจนี้</button>
+                                            <a id="registerBtnIndex1" href="#"
+                                                class="package-button register-button">สมัครแพ็กเกจนี้</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="package-card">
+                                <div class="package-card card-package">
                                     <div class="package-card-header">
+                                        <button type="button" id="open-modalIndex2" class="close-icon close-expanded">
+                                            <img src="./../assets/images/close-icon.svg" alt="package"
+                                                class="package-card-close">
+                                        </button>
                                         <img class="header-icon" src="./../assets/images/header-icon.png" alt="package"
                                             class="package-card-img">
                                         <p class="package-card-name">NT Plusnet</p>
                                         <div class="package-card-speed-wrapper">
-                                            <p class="package-card-speed-up">600</p>
+                                            <p class="package-card-speed-up">1000</p>
                                             <p class="dif">/</p>
                                             <div class="speed-down-wrapper">
-                                                <p class="package-card-speed-down">600</p>
+                                                <p class="package-card-speed-down">1000</p>
                                                 <p>mbps</p>
                                             </div>
                                         </div>
 
                                     </div>
                                     <div class="package-card-body">
+                                        <div class="condition-link-wrapper">
+                                            <button type="button" class="condition-link more-info"
+                                                data-bs-toggle="modal" data-bs-target="#packages-modal">
+                                                เงื่อนไขเพิ่มเติม
+                                            </button>
+                                        </div>
                                         <div class="package-price-wrapper">
-                                            <p class="package-card-price">1,000</p>
+                                            <p class="package-card-price">900</p>
                                             <p class="package-card-description">บาท / เดือน</p>
                                         </div>
                                         <div class="collapse" id="packageConditionIndex2">
@@ -114,31 +134,41 @@
                                                         fill="#fff" />
                                                 </svg>
                                             </button>
-                                            <button id="registerBtnIndex2" type="button"
-                                                class="package-button register-button">สมัครแพ็กเกจนี้</button>
+                                            <a id="registerBtnIndex2" href="#"
+                                                class="package-button register-button">สมัครแพ็กเกจนี้</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="package-card">
+                                <div class="package-card card-package">
                                     <div class="package-card-header">
+                                        <button type="button" id="open-modalIndex3" class="close-icon close-expanded">
+                                            <img src="./../assets/images/close-icon.svg" alt="package"
+                                                class="package-card-close">
+                                        </button>
                                         <img class="header-icon" src="./../assets/images/header-icon.png" alt="package"
                                             class="package-card-img">
                                         <p class="package-card-name">NT Plusnet</p>
                                         <div class="package-card-speed-wrapper">
-                                            <p class="package-card-speed-up">600</p>
+                                            <p class="package-card-speed-up">1000</p>
                                             <p class="dif">/</p>
                                             <div class="speed-down-wrapper">
-                                                <p class="package-card-speed-down">600</p>
+                                                <p class="package-card-speed-down">700</p>
                                                 <p>mbps</p>
                                             </div>
                                         </div>
 
                                     </div>
                                     <div class="package-card-body">
+                                        <div class="condition-link-wrapper">
+                                            <button type="button" class="condition-link more-info"
+                                                data-bs-toggle="modal" data-bs-target="#packages-modal">
+                                                เงื่อนไขเพิ่มเติม
+                                            </button>
+                                        </div>
                                         <div class="package-price-wrapper">
-                                            <p class="package-card-price">1,000</p>
+                                            <p class="package-card-price">690</p>
                                             <p class="package-card-description">บาท / เดือน</p>
                                         </div>
                                         <div class="collapse" id="packageConditionIndex3">
@@ -163,25 +193,26 @@
                                                         fill="#fff" />
                                                 </svg>
                                             </button>
-                                            <button id="registerBtnIndex3" type="button"
-                                                class="package-button register-button">สมัครแพ็กเกจนี้</button>
+                                            <a id="registerBtnIndex3" href="#"
+                                                class="package-button register-button">สมัครแพ็กเกจนี้</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- use 4th slide to js -->
                             <div class="swiper-slide">
-                                <div class="package-card">
+                                <div class="package-card card-package">
                                     <div class="package-card-header">
-                                        <button type="button" class="close-icon">
-                                            <img src="./../assets/images/close-icon.svg"
-                                                alt="package" class="package-card-close">
+                                        <button type="button" id="open-modalIndex4" class="close-icon close-expanded">
+                                            <img src="./../assets/images/close-icon.svg" alt="package"
+                                                class="package-card-close">
                                         </button>
 
                                         <img class="header-icon" src="./../assets/images/header-icon.png" alt="package"
                                             class="package-card-img">
                                         <p class="package-card-name">NT Plusnet</p>
                                         <div class="package-card-speed-wrapper">
-                                            <p class="package-card-speed-up">600</p>
+                                            <p class="package-card-speed-up">1000</p>
                                             <p class="dif">/</p>
                                             <div class="speed-down-wrapper">
                                                 <p class="package-card-speed-down">600</p>
@@ -191,8 +222,14 @@
 
                                     </div>
                                     <div class="package-card-body">
+                                        <div class="condition-link-wrapper">
+                                            <button type="button" class="condition-link more-info"
+                                                data-bs-toggle="modal" data-bs-target="#packages-modal">
+                                                เงื่อนไขเพิ่มเติม
+                                            </button>
+                                        </div>
                                         <div class="package-price-wrapper">
-                                            <p class="package-card-price">1,000</p>
+                                            <p class="package-card-price">590</p>
                                             <p class="package-card-description">บาท / เดือน</p>
                                         </div>
 
@@ -206,9 +243,9 @@
                                         </div>
 
                                         <div class="package-button-wrapper">
-                                            <button type="button" class="package-button" data-bs-toggle="collapse"
-                                                data-bs-target="#packageConditionIndex4" aria-expanded="false"
-                                                aria-controls="packageConditionIndex4">
+                                            <button type="button" id="opencollapseIndex4" class="package-button"
+                                                data-bs-toggle="collapse" data-bs-target="#packageConditionIndex4"
+                                                aria-expanded="false" aria-controls="packageConditionIndex4">
                                                 ดูรายละเอียด
                                                 <svg id="Group_92088" xmlns="http://www.w3.org/2000/svg" width="13.832"
                                                     height="13.832" viewBox="0 0 13.832 13.832">
@@ -217,8 +254,8 @@
                                                         fill="#fff" />
                                                 </svg>
                                             </button>
-                                            <button id="registerBtnIndex4" type="button"
-                                                class="package-button register-button">สมัครแพ็กเกจนี้</button>
+                                            <a id="registerBtnIndex4" href="#"
+                                                class="package-button register-button">สมัครแพ็กเกจนี้</a>
                                         </div>
                                     </div>
                                 </div>
@@ -226,69 +263,121 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
+                    <!-- modal -->
+                    <div class="modal package-modal fade nt-font" id="packages-modal" tabindex="-1" role="dialog"
+                        aria-labelledby="packagesModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title text-center" id="packagesModalLabel">เงื่อนไขเพิ่มเติม</p>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.092" height="19.092"
+                                                viewBox="0 0 19.092 19.092">
+                                                <g id="Icon_feather-plus" data-name="Icon feather-plus"
+                                                    transform="translate(9.546 -5.303) rotate(45)">
+                                                    <path id="Path_33257" data-name="Path 33257" d="M0,0V21"
+                                                        transform="translate(10.5)" fill="none" stroke="#000"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="3" />
+                                                    <path id="Path_33258" data-name="Path 33258" d="M0,0H21"
+                                                        transform="translate(0 10.5)" fill="none" stroke="#000"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="3" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="madal-body-addpad">
+                                        <div class="modal-body-content-header-wrapper">
+                                            <p class="modal-body-content-header text-center">
+                                                เงื่อนไขรายการส่งเสริมการขาย
+                                            </p>
+                                        </div>
+                                        <div class="modal-body-content-time-wrapper">
+                                            <p class="modal-body-content-time text-center">
+                                                ระยะเวลาส่งเสริมการขายตั้งแต่<span id="condition-time">วันนี้ – 30
+                                                    เมษายน
+                                                    2568</span>
+                                            </p>
+                                        </div>
+                                        <ol class="modal-condition-list">
+                                            <li>
+                                                รายการส่งเสริมการขายนี้ให้บริการลูกค้าบุคคลทั่วไป (R)
+                                                โดยการให้บริการจะเป็นมาตรฐานลูกค้าบ้านพักอาศัย
+                                            </li>
+                                            <li>อัตราค่าบริการดังกล่าวยังไม่รวมภาษีมูลค่าเพิ่ม (VAT)
+                                            </li>
+                                            <li>
+                                                กรณีวันที่เริ่มเปิดใช้บริการในรายการส่งเสริมการขายนี้ไม่ตรงรอบบิล
+                                                จะคิดการใช้บริการในรอบบิลนั้นเป็น รอบบิลแรก
+                                                โดยสิทธิ์การใช้งานและค่าใช้บริการคิดตามวันที่ผู้ใช้บริการใช้งานจริง (Pro
+                                                Rate)
+                                            </li>
+                                            <li>
+                                                ระดับความเร็วที่ให้บริการเป็นระดับความเร็วสูงสุดที่คู่สายของ NT
+                                                ในตำแหน่งที่ผู้ใช้บริการขอใช้บริการรองรับในการ Download หรือ Upload ได้
+                                                ซึ่งอาจไม่ใช่ความเร็วสูงสุดในช่วงราคารายการส่งเสริมการขายนั้นๆ
+                                            </li>
+                                            <li>
+                                                กรณีระดับความเร็ว 1 Gbps ให้บริการเฉพาะพื้นที่ที่ NT
+                                                มีโครงข่ายพร้อมให้บริการรองรับในระดับความเร็วดังกล่าวและรองรับระดับความเร็วเฉพาะใช้ผ่านสาย
+                                                LAN เท่านั้น
+                                            </li>
+                                            <li>
+                                                ผู้ใช้บริการสามารถปรับเปลี่ยนระดับความเร็วเพิ่มขึ้นได้ตลอดระยะเวลาในการใช้งาน
+                                                โดยระดับความเร็วสูงสุดที่จะให้บริการได้ขึ้นกับศักยภาพของคู่สายของ NT
+                                            </li>
+                                            <li>
+                                                เมื่อครบระยะสัญญาใช้บริการรายการส่งเสริมการขาย
+                                                ผู้ใช้บริการจะได้รับความเร็วในการใช้บริการ Hi-speed internet
+                                                ที่ระดับความเร็วในรอบบิลสุดท้าย
+                                                ด้วยอัตราค่าบริการรายเดือนตามรายการส่งเสริมการขายนี้
+                                                หรืออัตราพิเศษตามที่ NT
+                                                กำหนดในช่วงเวลานั้น
+                                            </li>
+                                            <li>
+                                                กรณีใช้บริการอินเทอร์เน็ตอยู่แล้ว
+                                                และใช้บริการยังไม่ครบกำหนดตามระยะสัญญาของรายการส่งเสริม การขายนั้นๆ
+                                                สามารถสมัครใช้รายการส่งเสริมการขายนี้ได้เฉพาะระยะสัญญาเดิมเหลือน้อยกว่า
+                                                12
+                                                รอบบิล ทั้งนี้ ผู้ใช้บริการที่ต้องการเปลี่ยนรายการส่งเสริมการขาย
+                                                หากรายการส่งเสริมการขายใหม่มีราคาต่ำกว่า
+                                                และรายการส่งเสริมการขายเดิมไม่ครบสัญญา
+                                                จะต้องชำระค่าธรรมเนียมในการปรับเปลี่ยน ครั้งละ 1,000 บาท
+                                            </li>
+                                            <li>
+                                                กรณีผู้ใช้บริการยกเลิกบริการอินเทอร์เน็ตความเร็วสูงหรือเปลี่ยนรายการส่งเสริมการขาย
+                                                บริการเสริม ที่ผู้ใช้บริการได้รับจะสิ้นสุด
+                                            </li>
+                                            <li>
+                                                การยกเลิกสัญญาการใช้บริการก่อนระยะสัญญาที่ต้องชำระค่าใช้จ่ายตามเงื่อนไขรายการส่งเสริมการขาย
+                                                ได้แก่
+                                                ผู้ใช้บริการยกเลิกบริการโดยไม่ได้มีความบกพร่องของการให้บริการจาก NT
+                                                ในระยะเวลา 15 วันก่อนวันที่แจ้งขอยกเลิก
+                                                ผู้ใช้บริการถูกระงับอันเนื่องมาจากการค้างชำระค่าใช้บริการ
+                                                โดยไม่ได้มาดำเนินการต่อสัญญาการใช้บริการตามระยะเวลาที่ NT กำหนด
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#" class="package-button">เช็กพื้นที่เพื่อสมัคร</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./../vendor/bootstrap.bundle.js"></script>
-<script src="./../vendor/swiper-bundle.js"></script>
-<script>
-    window.addEventListener('DOMContentLoaded', function () {
-
-        let totalSlide = 6;
-        let packageSwiper = new Swiper('#package-swiper', {
-            spaceBetween: 40,
-            loop: true,
-            loopedSlides: totalSlide,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 40,
-                },
-                768: {
-                    slidesPerView: 1.25,
-                    spaceBetween: 40,
-                },
-                820: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 40,
-                },
-                991: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 40,
-                },
-                1224: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                },
-                1440: {
-                    slidesPerView: 2.25,
-                    spaceBetween: 40,
-                },
-                1600: {
-                    slidesPerView: 2.5,
-                    spaceBetween: 40,
-                },
-                1800: {
-                    slidesPerView: 2.75,
-                    spaceBetween: 40,
-                },
-            }
-        });
-
-    });
-
-
-</script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script src="./../vendor/bootstrap.bundle.js"></script> -->
+<!-- <script src="./../vendor/swiper-bundle.js"></script> -->
+<script src="./package.js"></script>
 
 </html>

@@ -12,12 +12,29 @@ p {
     text-align: center;
 }
 
+.packages-body {
+    margin-bottom: 0 !important;
+}
+
+.packages-wrapper {
+    height: calc(100vh - 80px);
+}
+
+.packages-wrapper>h3 {
+    padding-top: 70px;
+}
+
 .dif {
     margin: 0 0.5rem !important;
 }
 
+.pack-slick-container {
+    margin-top: 0 !important;
+}
+
 .packages-slick {
     margin: 0 10%;
+    padding-top: 0 !important;
 }
 
 .nt-font {
@@ -28,12 +45,14 @@ p {
     background-color: #F2F2F2;
 }
 
-.swiper-slide .package-card {
+.packages-slick .swiper-slide .package-card {
     width: 459px;
     background-color: #fff;
     border-radius: 34px;
     overflow: hidden;
     font-family: 'NT' !important;
+    padding: 0 !important;
+    transition: all 0.3s linear !important;
 }
 
 .swiper-slide .package-condition-list {
@@ -42,6 +61,35 @@ p {
 
 .swiper-slide .register-button {
     display: none;
+    width: 100%;
+    max-width: 405px !important;
+    margin: auto;
+    text-decoration: none;
+}
+
+.register-button:hover, .register-button:active {
+    color: #fff;
+}
+
+.pack-slick-container .swiper-slide-active .close-icon {
+    display: none;
+}
+
+.pack-slick-container.expanded .swiper-slide-active .register-button {
+    display: flex !important;
+}
+
+.pack-slick-container.expanded .swiper-slide-active .package-button {
+    display: none;
+}
+
+.pack-slick-container.expanded .swiper-slide-active .package-card {
+    width: 680px !important;
+    transition: all 0.3s linear !important;
+}
+
+.pack-slick-container.expanded .swiper-slide-active {
+    margin-right: 180px;
 }
 
 .package-card .package-card-header {
@@ -60,6 +108,29 @@ p {
 .package-card .package-card-body {
     width: 100%;
     padding: 2rem;
+    position: relative;
+}
+
+.swiper-slide .condition-link-wrapper {
+    display: none;
+}
+
+.pack-slick-container.expanded .swiper-slide-active .condition-link-wrapper {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 55;
+}
+
+.condition-link-wrapper .condition-link {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+
 }
 
 #package-swiper {
@@ -97,19 +168,19 @@ p {
     margin-top: 50px;
 }
 
-.swiper-slide:nth-child(4n+1) .package-card-header {
+.swiper-slide:nth-child(4n+3) .package-card-header {
     background-color: #FFBD02;
 }
 
-.swiper-slide:nth-child(4n+2) .package-card-header {
+.swiper-slide:nth-child(4n+4) .package-card-header {
     background-color: #61D2BF;
 }
 
-.swiper-slide:nth-child(4n+3) .package-card-header {
+.swiper-slide:nth-child(4n+1) .package-card-header {
     background-color: #FF7F6E;
 }
 
-.swiper-slide:nth-child(4n) .package-card-header {
+.swiper-slide:nth-child(4n+2) .package-card-header {
     background-color: #C67B5C;
 }
 
@@ -161,10 +232,10 @@ p {
 }
 
 .package-button {
-    width: 100%;
+    width: 100% !important;
     height: 64px;
     border-radius: 33px;
-    background-color: #000;
+    background-color: #000 !important;
     border: 1px solid #000;
     color: #fff;
     font-size: 22px;
@@ -175,6 +246,7 @@ p {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    max-width: unset !important;
 }
 
 .package-button svg {
@@ -186,14 +258,14 @@ p {
     margin-left: 0.5rem !important;
 }
 
-.swiper-slide.active .close-icon{
+.pack-slick-container.expanded .swiper-slide .close-icon {
     display: block;
 }
 
 .close-icon {
     display: none;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     position: absolute;
@@ -203,13 +275,115 @@ p {
     z-index: 50;
 }
 
+/* modal */
+
+.package-modal .modal-dialog {
+    width: 90%;
+    height: 80vh;
+    top: 9.5%;
+    transform: translateY(-50%);
+    max-width: 1000px !important;
+    margin: auto !important;
+}
+
+.package-modal .modal-dialog .modal-content {
+    height: 100%;
+    margin: auto !important;
+    width: 90%;
+    border-radius: 34px;
+}
+
+.package-modal .modal-dialog .modal-header {
+    justify-content: center;
+}
+
+.package-modal .modal-dialog .modal-header .modal-title {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.package-modal .modal-dialog .modal-header .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.package-modal .modal-dialog .modal-body {
+    overflow-y: hidden;
+    padding: 1rem 2rem;
+}
+
+.package-modal .modal-dialog .modal-footer {
+    justify-content: center;
+    border-top: none;
+    margin-top: 1.5rem;
+}
+
+.package-modal .modal-dialog .modal-footer .package-button {
+    max-width: 405px !important;
+    width: 100%;
+}
+
+.modal-body-content-header {
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.modal-body-content-time {
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.modal-condition-list li {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.modal-content ::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.modal-content ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.modal-content ::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+}
+
+.madal-body-addpad {
+    padding: 1rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
 @media only screen and (max-width: 991px) {
-    .swiper-slide .package-card {
+    .packages-slick .swiper-slide .package-card {
         width: 400px;
+    }
+
+    .packages-wrapper {
+        height: calc(100vh - 82px);
     }
 }
 
 @media only screen and (max-width: 768px) {
+
+    .packages-wrapper {
+        height: calc(100vh - 65px);
+    }
 
     .package-card-name {
         font-size: 18px;
@@ -241,5 +415,45 @@ p {
     .package-price-wrapper p:not(.package-card-price) {
         margin-bottom: 0 !important;
 
+    }
+
+    .package-button {
+        height: 45px;
+    }
+
+    .register-button {
+        width: 100%;
+    }
+
+    .pack-slick-container.expanded .swiper-slide-active .package-card {
+        width: unset !important;
+        transition: all 0.3s linear !important;
+    }
+
+    .pack-slick-container.expanded .swiper-slide-active .condition-link-wrapper {
+        top: 0.5rem;
+    }
+
+    .package-modal .modal-dialog {
+        width: 90%;
+        margin: auto !important;
+        top: 9.5%;
+    }
+
+
+    .package-modal .modal-dialog .modal-content {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .packages-slick .swiper-slide .package-card {
+        width: 100%;
+    }
+
+        .pack-slick-container .swiper {
+        padding: 0;
+        height: 470px;
     }
 }
